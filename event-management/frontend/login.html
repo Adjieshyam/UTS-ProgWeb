@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Event Management 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-card">
+      <div class="brand-mark" aria-hidden="true">EM</div>
+      <h1>Event Management</h1>
+      <p class="muted center">Sign in to your account</p>
+      <form action="../backend/login.php" method="post">
+        <label for="email">EMAIL ADDRESS</label>
+        <input id="email" name="email" type="email" placeholder="you@university.edu" autocomplete="username" required>
+        <label for="password">PASSWORD</label>
+        <div class="password-wrap">
+          <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+          <button type="button" class="password-toggle" data-toggle-password>Show</button>
+        </div>
+        <div class="form-row">
+          <label class="check-label"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+      </form>
+      <p class="auth-note">Demo: demo@event.test / password</p>
+    </section>
+    <footer class="auth-footer">Event Management 2026</footer>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
